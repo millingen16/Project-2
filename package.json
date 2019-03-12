@@ -1,0 +1,25 @@
+{
+	"name": "project-2",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "sequelize db:migrate && sequelize db:seed:all && node server.js",
+		"dev-init": "sequelize db:migrate && sequelize db:seed:all && nodemon server.js",
+		"dev": "nodemon server.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"express": "^4.16.4",
+		"express-handlebars": "^3.0.2",
+		"mysql2": "^1.6.5",
+		"sequelize": "^4.43.0",
+		"sequelize-cli": "^5.4.0"
+	},
+	"devDependencies": {
+		"nodemon": "^1.18.10"
+	}
+}

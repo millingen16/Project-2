@@ -1,0 +1,192 @@
+html {
+	font-family: 'Lato', 'Arial', 'sans-serif';
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	background-color: #333;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	flex: 1 0 auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.btn {
+	font-size: 1rem;
+}
+.input-field.col .prefix ~ label {
+	width: calc(80% - 3rem - 1.5rem);
+}
+
+.input-field .prefix ~ textarea {
+	width: calc(85% - 3rem);
+}
+#btnSearch {
+	width: 15%;
+	margin-left: 1%;
+	white-space: normal;
+}
+.center-align {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	left: 50%;
+}
+textarea.materialize-textarea {
+	border-bottom: 1px solid #ea402f;
+	box-shadow: 0 1px 0 0 #ea402f;
+	color: #fff;
+}
+
+.input-field .prefix,
+textarea.materialize-textarea + label {
+	color: #ea402f;
+}
+
+textarea.materialize-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 1px 0 0 #fff;
+}
+
+.input-field .prefix.active,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+	color: #fff;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+img,
+video,
+audio {
+	max-width: 100%;
+	height: auto;
+}
+.ForOhFor {
+	color: #ffffff;
+}
+.hidden {
+	display: none;
+}
+
+.cursor_pointer {
+	cursor: pointer;
+}
+
+.fa-book-reader {
+	font-size: 2.1rem;
+}
+
+.sidenav li > a {
+	padding: 0 16px;
+}
+
+.sidenav li > a > i.material-icons {
+	margin: 0 16px 0 0;
+}
+
+.side-nav .divider {
+	margin: 0;
+	height: 8px;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: transparent;
+}
+
+.page-footer {
+	padding: 10px;
+}
+
+:root {
+	font-size: 1rem;
+}
+
+@media (max-width: 575px) {
+	:root {
+		font-size: 0.625rem;
+	}
+}
+
+@media (max-width: 767px) {
+	:root {
+		font-size: 0.75rem;
+	}
+}
+
+@media (max-width: 991.98px) {
+	:root {
+		font-size: 0.875rem;
+	}
+}
+
+@media (max-width: 1199.98px) {
+	:root {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	:root {
+		font-size: 1.125rem;
+	}
+}
+
+.card {
+	position: relative;
+	max-height: 600px;
+}
+
+.card-image {
+	max-width: 100%;
+	max-height: 300px;
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.main-title {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.card .card-content .card-title {
+	display: none;
+}
+
+.card-content {
+	max-height: 150px;
+	overflow: auto;
+	text-overflow: ellipsis;
+}
+
+.card-action {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+@media (max-width: 600px) {
+	.card {
+		height: auto;
+	}
+
+	.card-image {
+		display: none;
+	}
+	.card-content {
+		max-height: 200px;
+	}
+	.card .card-content .card-title {
+		display: block;
+	}
+}
