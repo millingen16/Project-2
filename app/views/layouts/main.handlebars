@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="/assets/css/normalize.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <title>RU Library</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-wrapper red">
+      <div class="container">
+        <a href="/" class="brand-logo"><span><i class="fas fa-book-reader valign-wrapper"></i>RU Library</span></a>
+        <a href="#!" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/">Home</a></li>
+          <li><a href="/book">View Books</a></li>
+          {{!-- <li><a href="/book/add">Add Books</a></li> --}}
+        </ul>
+      </div>
+    </nav>
+    <ul class="sidenav red" id="mobile-menu">
+      <li>
+        <a href="/" class="waves-effect waves-blue white-text lighten-5"><i
+            class="material-icons white-text">home</i>Home</a>
+      </li>
+      <li>
+        <div class="divider gray"></div>
+      </li>
+      <li>
+        <a href="/book" class="waves-effect waves-blue white-text lighten-5"><i
+            class="material-icons white-text">search</i>View Books</a>
+      </li>
+      <li>
+        <div class="divider gray"></div>
+      </li>
+      {{!-- <li>
+        <a href="/book/add" class="waves-effect waves-blue white-text lighten-5"><i
+            class="material-icons white-text">add</i>Add
+          Books</a>
+      </li> --}}
+    </ul>
+  </header>
+  <main>
+    {{{body}}}
+  </main>
+  <footer class="page-footer red">
+    <div class="container center">
+      &copy;2019 Copyright
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+
+</html>
