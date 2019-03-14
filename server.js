@@ -18,13 +18,6 @@ const db = require('./app/models');
 
 app.set('views', path.join(__dirname, './app/views'));
 
-// Body Parser
-app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-
-// Set static folder
-app.use(express.static(path.join(__dirname, '/app/public')));
-
 // Handlebars
 app.engine(
 	'handlebars',
@@ -35,15 +28,15 @@ app.engine(
 );
 app.set('view engine', 'handlebars');
 
-// Routes
-app.use('/', require('./app/routes/html'));
-app.use('/api', require('./app/routes/api'));
+// Body Parser
+app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
-// Handle 400
-app.use(function(req, res) {
-	res.status(400);
-	res.render('400');
-});
+// Set static folder
+app.use(express.static(path.join(__dirname, './app/public')));
+
+// Routes
+app.use('/', require('./app/routes'));
 
 // Handle 404
 app.use(function(req, res) {

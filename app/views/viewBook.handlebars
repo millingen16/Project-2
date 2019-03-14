@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="container">
   <div class="row">
     {{#each books}}
@@ -34,4 +35,38 @@
     <p>No Books available</p>
     {{/each}}
   </div>
+=======
+<div class="container">
+  <div class="row">
+    {{#each books}}
+    <div class="col s12 m6 l3">
+      <div class="card">
+        <div class="card-image">
+          <img class="materialboxed" src={{imgURL}} alt="Book Cover">
+          <span class="card-title main-title activator">{{name}}</span>
+        </div>
+        <div class="card-content">
+          <p class="card-title activator">{{name}}</p>
+          <p><b>Author: </b>{{#authors}}{{firstName}} {{lastName}} ;{{/authors}}</p>
+          <p><b>Volume: </b>{{volume}}</p>
+          <p><b>Available: </b>{{availableQuantity}}/{{maxQuantity}}</p>
+        </div>
+        <div class="card-reveal">
+          <h6 class="card-title">{{name}}</h6>
+          <p>
+            (synopsis)
+          </p>
+          <p class="synopsis">{{description}}</p>
+        </div>
+        <div class="card-action">
+          <a href="#!">Check-Out</a>
+          <a href="#!">Check-In</a>
+        </div>
+      </div>
+    </div>
+    {{else}}
+    <p>No Books available</p>
+    {{/each}}
+  </div>
+>>>>>>> 93ec6d8d424fcd8adfe20ecfa9d7e372529365a8
 </div>

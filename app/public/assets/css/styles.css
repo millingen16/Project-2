@@ -38,24 +38,24 @@ main {
 	transform: translateY(-50%) translateX(-50%);
 	left: 50%;
 }
-input[type='text'] {
+textarea.materialize-textarea {
 	border-bottom: 1px solid #ea402f;
 	box-shadow: 0 1px 0 0 #ea402f;
 	color: #fff;
 }
 
 .input-field .prefix,
-input[type='text'] + label {
+textarea.materialize-textarea + label {
 	color: #ea402f;
 }
 
-input[type='text']:focus:not([readonly]) {
+textarea.materialize-textarea:focus:not([readonly]) {
 	border-bottom: 1px solid #fff;
 	box-shadow: 0 1px 0 0 #fff;
 }
 
 .input-field .prefix.active,
-input[type='text']:focus:not([readonly]) + label {
+textarea.materialize-textarea:focus:not([readonly]) + label {
 	color: #fff;
 }
 *,
